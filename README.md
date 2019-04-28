@@ -2,7 +2,8 @@
 A darts score calculator with checkouts written in Python
 
 Downloading and running:
-1. Download both .py files and place them into the same folder.
+1. Download both .py files and place them into the same folder. 
+   Or download just the main.exe and run it. (Skip step 2.)
 2. Run main.py.
 
 Using:
