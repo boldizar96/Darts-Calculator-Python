@@ -7,7 +7,7 @@ __Downloading and running:__
 2. Run main.py.
 
 __Using:__
-0. Type "q" to quit.
+Type "q" to quit.
 1. Choose the points: type "301" or "501".
    (You have to reach ZERO from these points.)
 2. Choose how many of you want to play: 1-6 players.
