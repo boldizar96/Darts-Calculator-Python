@@ -1,12 +1,12 @@
 # Darts-Calculator-Python
 A darts score calculator with checkouts written in Python
 
-Downloading and running:
+__Downloading and running:__
 1. Download both .py files and place them into the same folder. 
    Or download just the main.exe and run it. (Skip step 2.)
 2. Run main.py.
 
-Using:
+__Using:__
 0. Type "q" to quit.
 1. Choose the points: type "301" or "501".
    (You have to reach ZERO from these points.)
@@ -16,7 +16,7 @@ Using:
 4. Choose name: "1" - if you want give name or "2" - if you're good with player numbers.
 5. Then the game begins.
 
-Game:
+__Game:__
 1. The thrown points could be written this way:
 T[number] = Triple [number].
 D[number] = Double [number].
