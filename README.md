@@ -6,8 +6,8 @@ __Downloading and running:__
    Or download just the main.exe and run it. (Skip step 2.)
 2. Run main.py.
 
-__Using:__
-Type "q" to quit.
+__Using:__  
+Type "q" to quit.  
 1. Choose the points: type "301" or "501".
    (You have to reach ZERO from these points.)
 2. Choose how many of you want to play: 1-6 players.
@@ -17,8 +17,8 @@ Type "q" to quit.
 5. Then the game begins.
 
 __Game:__
-1. The thrown points could be written this way:
-T[number] = Triple [number].
-D[number] = Double [number].
-[number] = Simple [number].
+1. The thrown points could be written this way:  
+T[number] = Triple [number].  
+D[number] = Double [number].  
+[number] = Simple [number].  
 2. The first player who reaches zero (observing the rules) wins the match.
