@@ -1,3 +1,4 @@
+#duplás kiszállók
 kiszallok = { 
     "170": ["T20", "T20", "50"],
     "167": ["T20", "T19", "50"],
@@ -163,6 +164,7 @@ kiszallok = {
     "2": ["D1"]
     }
 
+#szimplás kiszállók
 kiszallok_osszes = { 
     "180": ["T20", "T20", "T20"],
     "177": ["T20", "T20", "T19"],
@@ -337,6 +339,7 @@ kiszallok_osszes = {
     "1": ["1"]
     }
 
+#pontsdzámokat listába szedjük
 pontszam = list(kiszallok.keys())
 pontszam2 = list(kiszallok_osszes.keys())
 
@@ -345,30 +348,30 @@ class Jatekos:
         self.nev = nev
         self.pontok = pontok
 
-    def dob(self,pont):
-        if((self.pontok-pont) > 0):
+    def dob(self,pont): #szimpla dobás
+        if((self.pontok-pont) > 0): #amíg nem nulla a pont
             self.pontok = self.pontok-pont
-            return "tovabb"
-        elif(self.pontok-pont == 0):
+            return "tovabb" #addig játszunk tovább
+        elif(self.pontok-pont == 0): #ha nulla a pont
             self.pontok = self.pontok-pont
-            return "vege"
+            return "vege" #akkor vége a játéknak
         else:
             return "hiba"
 
-    def dobD1(self,pont):
-        if((self.pontok-pont) > 1):
+    def dobD1(self,pont): #dupla dobás estén
+        if((self.pontok-pont) > 1): #csak akkor lehet kiszállózni, ha 2 vagy több marad
             self.pontok = self.pontok-pont
             return "tovabb"
-        else:
+        else: #különben hiba
             return "hiba"
     
-    def dobD2(self,pont):
-        if((self.pontok-pont) > 1):
+    def dobD2(self,pont): #dupla dobáshoz
+        if((self.pontok-pont) > 1): #amíg 2-nél több van, addig játszunk tovább
             self.pontok = self.pontok-pont
             return "tovabb"
-        elif(self.pontok-pont == 1):
+        elif(self.pontok-pont == 1): #ha 1 marad, akkor hiba
             return "hiba"
-        elif(self.pontok-pont == 0):
+        elif(self.pontok-pont == 0): #ha 0, akkor vége van
             self.pontok = self.pontok-pont
             return "vege"
         else:
@@ -377,14 +380,14 @@ class Jatekos:
     def nyert(self):
         return self.pontok == 0
 
-    def kiszallo(self):
+    def kiszallo(self): #dupla kiszálló listázó
         if(self.pontok<=170):
             for i in range(len(kiszallok)):
                 if(int(pontszam[i]) == self.pontok):
                     print("Kiszálló: ")
                     print(kiszallok[str(pontszam[i])])
 
-    def kiszallo2(self):
+    def kiszallo2(self): #szimpla kiszálló listázó
         if(self.pontok<=180):
             for i in range(len(kiszallok_osszes)):
                 if(int(pontszam2[i]) == self.pontok):
